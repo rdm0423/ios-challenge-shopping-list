@@ -42,36 +42,26 @@ class ListTableViewController: UITableViewController, NSFetchedResultsController
     func addGroceryItemAlert() {
         
         let alertController = UIAlertController(title: "Add to Grocery List", message: "What do you need from the store?", preferredStyle: .Alert)
+        
+        alertController.addTextFieldWithConfigurationHandler { (alertTextField) in
+            alertTextField.placeholder = "Enter Item Here"
+            self.alertTextField = alertTextField
+        }
+        
         let addItemAction = UIAlertAction(title: "Add", style: .Default) { (_) in
-            
-            // Do add action here!
-            if let field: UITextField = alertController.textFields![0] {
-                
-                // Create Item String to be Saved
-                let groceryItem = Item(name: "\(field.text)")
-                ItemController.sharedController.addItem(groceryItem.name)
-                
-                field.text = self.alertTextField.text
-                
-            } else {
-                // did not type in field - add logic check
+
+            guard let name = self.alertTextField.text else {
+                return
             }
+            ItemController.sharedController.addItem(name)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
-        
-        alertController.addTextFieldWithConfigurationHandler { (textField) in textField.placeholder = "Enter Item Here"
-        }
         
         alertController.addAction(addItemAction)
         alertController.addAction(cancelAction)
         
         self.presentViewController(alertController, animated: true, completion: nil)
-        
-        // Save on Close
-//        ItemController.sharedController.saveToPersistentStorage()
-        
-//        tableView.reloadData()
     }
     
     func updateItem() {
