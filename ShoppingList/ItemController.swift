@@ -17,7 +17,7 @@ class ItemController {
     
     init() {
         let request = NSFetchRequest(entityName: "Item")
-        let sortDescriptor1 = NSSortDescriptor(key: "isComplete", ascending: false)
+        let sortDescriptor1 = NSSortDescriptor(key: "isComplete", ascending: true)
         request.sortDescriptors = [sortDescriptor1]
         
         self.fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: Stack.sharedStack.managedObjectContext, sectionNameKeyPath: "isComplete", cacheName: nil)
