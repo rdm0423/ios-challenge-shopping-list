@@ -16,5 +16,5 @@ extension Item {
 
     @NSManaged var name: String
     @NSManaged var isComplete: NSNumber
-
+    
 }

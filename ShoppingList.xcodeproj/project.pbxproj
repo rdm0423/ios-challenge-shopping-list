@@ -13,11 +13,11 @@
 		1A4A23271CCA8D2C003A4350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A23251CCA8D2C003A4350 /* LaunchScreen.storyboard */; };
 		FF33FAA41CEF64E2005039B2 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAA31CEF64E2005039B2 /* ListTableViewController.swift */; };
 		FF33FAA61CEF64F3005039B2 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAA51CEF64F2005039B2 /* ButtonTableViewCell.swift */; };
-		FF33FAA81CEF6508005039B2 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAA71CEF6508005039B2 /* ListController.swift */; };
 		FF33FAAD1CEF6606005039B2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAAC1CEF6606005039B2 /* Stack.swift */; };
 		FF33FAB01CEF6616005039B2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAAE1CEF6616005039B2 /* Model.xcdatamodeld */; };
 		FF33FAB31CEF668F005039B2 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAB11CEF668F005039B2 /* Item+CoreDataProperties.swift */; };
 		FF33FAB41CEF668F005039B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAB21CEF668F005039B2 /* Item.swift */; };
+		FF33FAB71CEF68D3005039B2 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33FAB61CEF68D3005039B2 /* ItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +29,11 @@
 		1A4A23281CCA8D2C003A4350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF33FAA31CEF64E2005039B2 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		FF33FAA51CEF64F2005039B2 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
-		FF33FAA71CEF6508005039B2 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		FF33FAAC1CEF6606005039B2 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		FF33FAAF1CEF6616005039B2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FF33FAB11CEF668F005039B2 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF33FAB21CEF668F005039B2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FF33FAB61CEF68D3005039B2 /* ItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		FF33FAAB1CEF65F2005039B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF33FAA71CEF6508005039B2 /* ListController.swift */,
+				FF33FAB61CEF68D3005039B2 /* ItemController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -187,12 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF33FAB31CEF668F005039B2 /* Item+CoreDataProperties.swift in Sources */,
+				FF33FAB71CEF68D3005039B2 /* ItemController.swift in Sources */,
 				FF33FAA61CEF64F3005039B2 /* ButtonTableViewCell.swift in Sources */,
 				FF33FAAD1CEF6606005039B2 /* Stack.swift in Sources */,
 				1A4A231D1CCA8D2C003A4350 /* AppDelegate.swift in Sources */,
 				FF33FAB41CEF668F005039B2 /* Item.swift in Sources */,
 				FF33FAA41CEF64E2005039B2 /* ListTableViewController.swift in Sources */,
-				FF33FAA81CEF6508005039B2 /* ListController.swift in Sources */,
 				FF33FAB01CEF6616005039B2 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
